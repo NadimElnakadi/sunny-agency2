@@ -2,6 +2,7 @@
 body, html {
   text-align: center;
   margin: 0 auto;
+  font-family: "Fraunces";
 }
 
 main {
@@ -49,6 +50,12 @@ main .page1 h1 {
   text-align: center;
   padding-top: 10px;
   width: 100%;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 1000ms;
+}
+main .page1 h1:hover {
+  transform: scale(3);
 }
 main .page1 .fleche {
   margin: auto;
@@ -71,10 +78,41 @@ main .page1 .fleche {
   padding: 2%;
   padding-top: 10%;
 }
+.container .padding-1 .jaune h3::after {
+  display: block;
+  content: "";
+  width: 8.4375rem;
+  height: 0.625rem;
+  bottom: 0%;
+  background: #FAD400;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 1.75rem;
+  margin: auto;
+  margin-top: -0.5rem;
+}
+.container .padding-1 .rose h3::after {
+  display: block;
+  content: "";
+  width: 8.4375rem;
+  height: 0.625rem;
+  bottom: 0%;
+  background: pink;
+  mix-blend-mode: normal;
+  opacity: 0.25;
+  border-radius: 1.75rem;
+  margin: auto;
+  margin-top: -0.5rem;
+}
 .container .padding-1 h2 {
   color: #24303E;
 }
-.container .padding-1 p {
+.container .padding-1 h3 {
+  font-weight: bolder;
+  color: #24303E;
+  margin-bottom: 10%;
+}
+.container p {
   color: #808397;
 }
 
@@ -89,9 +127,11 @@ main .page1 .fleche {
 .container2 .padding-2 {
   padding-top: 50%;
   font-size: 5vw;
+  color: #24554A;
 }
 .container2 h2 {
   font-weight: bolder;
+  color: #24554A;
 }
 
 .container3 {
@@ -109,6 +149,7 @@ main .page1 .fleche {
 }
 .container3 h2 {
   font-weight: bolder;
+  color: #052C3B;
 }
 
 .container4 {
@@ -122,6 +163,7 @@ main .page1 .fleche {
   border-radius: 50%;
   width: 25%;
   height: 25%;
+  margin-top: 9vw;
 }
 .container4 .padding-4 p {
   font-size: 6vw;
@@ -130,7 +172,16 @@ main .page1 .fleche {
 .container4 .padding-4 q {
   color: #A7AAAD;
 }
+.container4 .padding-4 .name {
+  color: #24303E;
+  font-weight: 900;
+  font-size: 5vw;
+}
 
+.container5 {
+  padding-top: 20vw;
+  margin-bottom: -5%;
+}
 .container5 .padding-5 {
   width: 100%;
   display: grid;
@@ -139,11 +190,13 @@ main .page1 .fleche {
 }
 .container5 .padding-5 div img {
   width: 100%;
+  margin: 0%;
+  margin-bottom: -2%;
 }
 
 .liste {
   color: #458D7E;
-  padding-bottom: 3.125rem;
+  padding-bottom: 3vw;
 }
 .liste h1 {
   font-size: 5rem;
@@ -158,6 +211,9 @@ main .page1 .fleche {
   font-size: 3.5rem;
 }
 
+.container6 {
+  padding-bottom: 3vw;
+}
 .container6 ul {
   list-style-type: none;
   display: flex;
